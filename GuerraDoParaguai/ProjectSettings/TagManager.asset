@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - FxTemporaire
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: not_interative
+    uniqueID: 3040240111
+    locked: 0
+  - name: interative
+    uniqueID: 3432324773
     locked: 0
