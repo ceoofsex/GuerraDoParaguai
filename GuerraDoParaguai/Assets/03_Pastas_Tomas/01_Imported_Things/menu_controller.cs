@@ -20,6 +20,12 @@ public class menu_controller : MonoBehaviour
         Canva_menu_pincipal.SetActive(true);
         Canva_credito.SetActive(false);
     }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(game_scene);
+    }
+
+
     public void exit_game()
     {
         Application.Quit();
