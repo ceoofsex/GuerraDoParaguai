@@ -11,6 +11,8 @@ public class WeaponSwitcher : MonoBehaviour
     public Animation _animation;
     public AnimationClip draw;
     private int selectedWeapon = 0;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -73,7 +75,7 @@ public class WeaponSwitcher : MonoBehaviour
 
         }
 
-         if(Input.GetAxis("Mouse ScrollWheel") < 0)
+        if(Input.GetAxis("Mouse ScrollWheel") < 0)
         {
 
             if(selectedWeapon <= 0)
@@ -86,6 +88,7 @@ public class WeaponSwitcher : MonoBehaviour
             }
 
         }
+        
 
         if(previousSeletedWeapon != selectedWeapon)
         {

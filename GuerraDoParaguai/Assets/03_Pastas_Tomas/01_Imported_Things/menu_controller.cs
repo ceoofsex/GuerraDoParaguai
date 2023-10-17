@@ -7,6 +7,7 @@ public class menu_controller : MonoBehaviour
 {
     public GameObject Canva_menu_pincipal;
     public GameObject Canva_credito;
+    public GameObject Canva_controls;
     [SerializeField] private string game_scene;
 
     public void canva_para_troca_do_credito()
@@ -14,11 +15,17 @@ public class menu_controller : MonoBehaviour
         Canva_menu_pincipal.SetActive(false);
         Canva_credito.SetActive(true);
     }
+    public void canva_para_troca_do_crotroles()
+    {
+        Canva_menu_pincipal.SetActive(false);
+        Canva_controls.SetActive(true);
+    }
 
     public void canva_para_troca_do_menu()
     {
         Canva_menu_pincipal.SetActive(true);
         Canva_credito.SetActive(false);
+        Canva_controls.SetActive(false);
     }
     public void PlayGame()
     {
