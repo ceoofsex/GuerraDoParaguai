@@ -3523,8 +3523,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PROGRAMMER: LUCAS VENANCIO\nGAME DESIGN: KAU\xC3 VICTOR\nARTIST: TOM\xC1S
-    B. PRESTES\n"
+  m_text: "PROGRAMMER: KAU\xC3 VICTOR S. MUZZO\nGAME DESIGN: KAU\xC3 E TOMAS\nARTIST:
+    TOM\xC1S B. PRESTES\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
   m_sharedMaterial: {fileID: -2747793552564482543, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
