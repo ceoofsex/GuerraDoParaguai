@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 
 public class WeaponSwitcher : MonoBehaviour
@@ -11,6 +12,8 @@ public class WeaponSwitcher : MonoBehaviour
     public Animation _animation;
     public AnimationClip draw;
     private int selectedWeapon = 0;
+    
+
 
     
     // Start is called before the first frame update
@@ -60,6 +63,7 @@ public class WeaponSwitcher : MonoBehaviour
         {
             selectedWeapon = 8;
         }
+        
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0)
         {
@@ -88,6 +92,13 @@ public class WeaponSwitcher : MonoBehaviour
             }
 
         }
+        if(Input.GetButton("Cancel"))
+        {
+            Application.Quit();
+            Debug.Log("QUIT");
+        }
+       
+        
         
 
         if(previousSeletedWeapon != selectedWeapon)

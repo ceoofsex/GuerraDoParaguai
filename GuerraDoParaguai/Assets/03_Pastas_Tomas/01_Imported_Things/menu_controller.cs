@@ -9,6 +9,7 @@ public class menu_controller : MonoBehaviour
     public GameObject Canva_credito;
     public GameObject Canva_controls;
     [SerializeField] private string game_scene;
+    
 
     public void canva_para_troca_do_credito()
     {

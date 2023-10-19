@@ -864,13 +864,14 @@ MonoBehaviour:
     W,A,S,D:
     MOVE
 
-    RIGHT CLICK / CTRL: SHOOT
+    MOUSE 1 / CTRL: SHOOT
 
     TAB: SCOREBOARD
 
     R: RECOIL
 
-'
+    ESC:
+    QUIT GAME'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
   m_sharedMaterial: {fileID: -2747793552564482543, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
