@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MouseLook : MonoBehaviour
 {
+    //bool cursor = true;
+    
     public static MouseLook instance;
 
     [Header("Settings")]
@@ -41,16 +44,25 @@ public class MouseLook : MonoBehaviour
             LockCursor();
 
     }
+    
 
     public void LockCursor()
     {
         // make the cursor hidden and locked
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
+
+        
     }
+    
+
+    
+    
 
     void Update()
     {
+        
         // Allow the script to clamp based on a desired target value.
         var targetOrientation = Quaternion.Euler(targetDirection);
         var targetCharacterOrientation = Quaternion.Euler(targetCharacterDirection);
