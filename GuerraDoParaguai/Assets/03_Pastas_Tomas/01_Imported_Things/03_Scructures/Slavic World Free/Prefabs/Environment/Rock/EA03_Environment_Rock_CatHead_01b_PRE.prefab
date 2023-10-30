@@ -259,10 +259,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4195210215685516}
   - component: {fileID: 205979320427740318}
-  - component: {fileID: -4234475995934888086}
-  - component: {fileID: 5040527196138077540}
-  - component: {fileID: 5426606193516327469}
-  - component: {fileID: 1814588267434143149}
   m_Layer: 0
   m_Name: EA03_Environment_Rock_CatHead_01b_PRE
   m_TagString: Untagged
@@ -315,55 +311,3 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23997309641614082}
   m_Enabled: 1
---- !u!65 &-4234475995934888086
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598535351202878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2504654, y: 1, z: 2.2073517}
-  m_Center: {x: -2.332284, y: 0, z: 0.7495599}
---- !u!65 &5040527196138077540
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598535351202878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.1007662, y: 1.5288038, z: 1.6605349}
-  m_Center: {x: 1.2541964, y: 0.26440227, z: 0.6934297}
---- !u!65 &5426606193516327469
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598535351202878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3914483, y: 1, z: 1.9612145}
-  m_Center: {x: 1.0665361, y: 0, z: -2.7889578}
---- !u!65 &1814588267434143149
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598535351202878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.73794633, z: 1.2933874}
-  m_Center: {x: 0, y: -0.13102683, z: 2.2144027}

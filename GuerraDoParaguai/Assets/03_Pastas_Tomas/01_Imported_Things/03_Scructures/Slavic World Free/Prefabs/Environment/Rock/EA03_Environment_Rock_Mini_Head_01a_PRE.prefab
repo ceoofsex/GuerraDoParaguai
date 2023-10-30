@@ -191,7 +191,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4754251929083912}
   - component: {fileID: 205722630725727448}
-  - component: {fileID: 6994829281967374711}
   m_Layer: 0
   m_Name: EA03_Environment_Rock_Mini_Head_01a_PRE
   m_TagString: Untagged
@@ -244,19 +243,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23268077879244604}
   m_Enabled: 1
---- !u!65 &6994829281967374711
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487456567395968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4162028, y: 0.40951303, z: 1}
-  m_Center: {x: -0.041114464, y: 0.02151446, z: 0}
 --- !u!1 &1579966284852610
 GameObject:
   m_ObjectHideFlags: 0
