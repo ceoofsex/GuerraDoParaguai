@@ -3,10 +3,18 @@ Menu.Play,Play,Jogar
 Menu.Options,Options,Opções
 Menu.Credits,Credits,Creditos
 Menu.Exit,Exit,Sair
+Menu.Navio.Cima,WAR MEMORIES:,MEMÓRIAS DE GUERRA:
+Menu.Navio.Baixo,CONFLICT IN PARAGUAY,CONFLITO DO PARAGUAI
 ,,
-,,
-Menu.Option.Back,Back,Voltar
 Menu.Option.Graphic,Graphic,Gráfico
 Menu.Option.FullScreen,Full screen,Tela cheia
 Menu.Option.Mute,Mute,Mudo
-Menu.Option.Idiom,Idiom,Idioma
+Menu.Option.Idiom,Language,Idioma
+,,
+,,
+,,
+,,
+Menu.Back,Back,Voltar
+,,
+Menu.Play.Mapa.1,map 1,Mapa 1
+Menu.Play.Mapa.2,map 2,Mapa 2
