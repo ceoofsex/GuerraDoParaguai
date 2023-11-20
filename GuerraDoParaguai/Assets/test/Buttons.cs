@@ -41,13 +41,13 @@ public class Buttons : MonoBehaviour
                 {
                     Application.Quit();
                 }
-                if (hitObject.CompareTag("button_back_credits"))
-                {
+                //if (hitObject.CompareTag("button_back_credits"))
+                //{
                 
-                    panelCredits.SetActive(false);
-                    buttonsMenu.SetActive(true);
+                //    panelCredits.SetActive(false);
+                //    buttonsMenu.SetActive(true);
                 
-                }
+                //}
             }
         }
     }

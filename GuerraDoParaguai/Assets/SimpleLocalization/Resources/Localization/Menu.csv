@@ -1,20 +1,20 @@
 Key,English,Portugues
-Menu.Play,Play,Jogar
-Menu.Options,Options,Opções
-Menu.Credits,Credits,Creditos
-Menu.Exit,Exit,Sair
+Menu.Play,PLAY,JOGAR
+Menu.Options,OPTIONS,OPÇÕES
+Menu.Credits,CREDITS,CREDITOS
+Menu.Exit,EXIT,SAIR
 Menu.Navio.Cima,WAR MEMORIES:,MEMÓRIAS DE GUERRA:
 Menu.Navio.Baixo,CONFLICT IN PARAGUAY,CONFLITO DO PARAGUAI
 ,,
-Menu.Option.Graphic,Graphic,Gráfico
-Menu.Option.FullScreen,Full screen,Tela cheia
-Menu.Option.Mute,Mute,Mudo
-Menu.Option.Idiom,Language,Idioma
+Menu.Option.Graphic,GRAPHIC,GRÁFICO
+Menu.Option.FullScreen,FULL SCREEN,TELA CHEIA
+Menu.Option.Mute,MUTE,MUDO
+Menu.Option.Idiom,LANGUAGE,IDIOMA
 ,,
 ,,
 ,,
 ,,
-Menu.Back,Back,Voltar
+Menu.Back,BACK,VOLTAR
 ,,
-Menu.Play.Mapa.1,map 1,Mapa 1
-Menu.Play.Mapa.2,map 2,Mapa 2
+Menu.Play.Mapa.1,MAP 1,MAPA 1
+Menu.Play.Mapa.2,MAP 2,MAPA 2
