@@ -6,7 +6,7 @@ namespace Assets.SimpleLocalization.Scripts
     /// <summary>
     /// Localize text component.
     /// </summary>
-    [RequireComponent(typeof(TextMeshProUGUI))]
+    [RequireComponent(typeof(TextMeshPro))]
     public class LocalizedText : MonoBehaviour
     {
         public string LocalizationKey;

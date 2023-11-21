@@ -7,6 +7,9 @@ Menu.Navio.Cima,WAR MEMORIES:,MEMÓRIAS DE GUERRA:
 Menu.Navio.Baixo,CONFLICT IN PARAGUAY,CONFLITO DO PARAGUAI
 ,,
 Menu.Option.Graphic,GRAPHIC,GRÁFICO
+Menu.Option.Low,LOW,BAIXO
+Menu.Option.Medium,MEDIUM,MÉDIO
+Menu.Option.High,HIGH,ALTO
 Menu.Option.FullScreen,FULL SCREEN,TELA CHEIA
 Menu.Option.Mute,MUTE,MUDO
 Menu.Option.Idiom,LANGUAGE,IDIOMA
