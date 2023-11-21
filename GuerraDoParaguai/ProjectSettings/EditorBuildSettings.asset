@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/03_Pastas_Tomas/01_Imported_Things/06_Scenes/01_Cutscenes/01_Principal_Cutscene.unity
+    guid: da9d073910e3e1c418a2ca2c3baffcda
   - enabled: 0
     path: Assets/03_Pastas_Tomas/01_Imported_Things/06_Scenes/menu.unity
     guid: 703c965be36fe3e44b368dc240c134b8
