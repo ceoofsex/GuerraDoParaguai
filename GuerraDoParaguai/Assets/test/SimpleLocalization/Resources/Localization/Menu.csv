@@ -14,8 +14,11 @@ Menu.Option.FullScreen,FULL SCREEN,TELA CHEIA
 Menu.Option.Mute,MUTE,MUDO
 Menu.Option.Idiom,LANGUAGE,IDIOMA
 ,,
-,,
-,,
+Game.Lobby.ChooseGame,CHOOSE A GAME,ESCOLHA UM JOGO
+Game.Lobby.CreateRoom,CREATE ROOM,CRIAR SALA
+Game.CreateRoom.RoomName,ROOM NAME,NOME DA SALA
+Game.CreateRoom.CreateRoom,CREATE ROOM,CRIAR SALA
+Game.CreateRoom.InputField,Pick a name,Escolha um nome
 ,,
 Menu.Back,BACK,VOLTAR
 ,,
