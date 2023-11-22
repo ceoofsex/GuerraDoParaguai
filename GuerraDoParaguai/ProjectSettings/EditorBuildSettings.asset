@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/03_Pastas_Tomas/01_Imported_Things/06_Scenes/menu.unity
     guid: 703c965be36fe3e44b368dc240c134b8
-  - enabled: 0
+  - enabled: 1
     path: Assets/01_Scenes/Game.unity
     guid: 856dff69f07260640ac4f499a0c98e75
   m_configObjects:
