@@ -484,9 +484,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.48128536
-  m_Height: 1.7195222
+  m_Height: 1.707188
   m_Direction: 1
-  m_Center: {x: -0.0014251173, y: 0.034261346, z: 0.00926739}
+  m_Center: {x: -0.0014251173, y: 0.04042846, z: 0.00926739}
 --- !u!114 &3744077026795126904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,8 +604,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.4299033
-  m_Center: {x: -0.019518465, y: -0.54976153, z: -0.0002798736}
+  m_Radius: 0.36535102
+  m_Center: {x: -0.019518465, y: -0.4852093, z: -0.0002798736}
 --- !u!114 &545353949412926925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3744077027935544167
 Transform:
   m_ObjectHideFlags: 0
@@ -649,7 +649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3744077027935544164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.45, z: 0.21}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0.372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2079,6 +2079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6586141765614445364}
     m_Modifications:
+    - target: {fileID: 923052474565995885, guid: 5f105c15536173a4383503378f484966, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 251a7ff46f048be41aae625cc90cbd75, type: 2}
     - target: {fileID: 5132198790355502092, guid: 5f105c15536173a4383503378f484966, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.29
@@ -2736,7 +2740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3714acb7cae8298408266f7e82c3a375, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1487557422895319406, guid: 3714acb7cae8298408266f7e82c3a375, type: 3}
       propertyPath: m_Layer
