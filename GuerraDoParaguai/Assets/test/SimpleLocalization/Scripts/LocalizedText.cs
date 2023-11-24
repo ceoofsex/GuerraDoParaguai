@@ -24,7 +24,7 @@ namespace Assets.SimpleLocalization.Scripts
 
         private void Localize()
         {
-            GetComponent<TextMeshPro>().text = LocalizationManager.Localize(LocalizationKey);
+            GetComponent<TextMeshProUGUI>().text = LocalizationManager.Localize(LocalizationKey);
         }
     }
 }
