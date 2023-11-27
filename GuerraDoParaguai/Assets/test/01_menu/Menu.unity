@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53800005, y: 0.7533334}
   m_AnchorMax: {x: 0.8583336, y: 0.89411116}
-  m_AnchoredPosition: {x: -789, y: -1}
+  m_AnchoredPosition: {x: -708, y: -1}
   m_SizeDelta: {x: -475.2848, y: -132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4024625
@@ -25718,7 +25718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1463151552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29724,7 +29724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15300001, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.9000244, y: 0.80000305}
+  m_AnchoredPosition: {x: -20.9, y: 0.80000305}
   m_SizeDelta: {x: 142.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792041937
@@ -29747,7 +29747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TELA CHEIA
+  m_text: FULL SCREEN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
   m_sharedMaterial: {fileID: -2747793552564482543, guid: 85a2810b631f1be4a8b7a56b723c7a2b, type: 2}
