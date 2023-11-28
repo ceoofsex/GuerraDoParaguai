@@ -7,6 +7,12 @@ TagManager:
   - CinemachineTarget
   - FxTemporaire
   - Bullet
+  - button_exit
+  - button_credits
+  - button_start
+  - button_options
+  - Water Volume
+  - TNT
   layers:
   - Default
   - TransparentFX

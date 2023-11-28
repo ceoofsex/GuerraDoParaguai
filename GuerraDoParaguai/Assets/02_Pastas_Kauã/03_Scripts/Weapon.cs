@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using TMPro;
@@ -51,7 +49,7 @@ public class Weapon : MonoBehaviour
     private Vector3 recoilVelocity = Vector3.zero;
 
     private float recoilLength;
-    private float recoverLength; 
+    private float recoverLength;
 
 
     private bool recoiling;
@@ -81,13 +79,13 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nextFire > 0)
+        if (nextFire > 0)
         {
             nextFire -= Time.deltaTime;
         }
-        
 
-        if(Input.GetButton("Fire1") && nextFire <= 0 && ammo > 0 && animation.isPlaying == false)
+
+        if (Input.GetButton("Fire1") && nextFire <= 0 && ammo > 0 && animation.isPlaying == false)
         {
             nextFire = 1 / fireRate;
 
@@ -101,16 +99,16 @@ public class Weapon : MonoBehaviour
             Fire();
         }
 
-        if(Input.GetKeyDown(KeyCode.R) && mag > 0)
+        if (Input.GetKeyDown(KeyCode.R) && mag > 0)
         {
             Reload();
         }
 
-        if(recoiling)
+        if (recoiling)
         {
             Recoil();
         }
-        if(recovering)
+        if (recovering)
         {
             Recovering();
         }
@@ -120,7 +118,7 @@ public class Weapon : MonoBehaviour
     void Reload()
     {
         animation.Play(reload.name);
-        if(mag > 0)
+        if (mag > 0)
         {
             mag--;
 
@@ -131,6 +129,7 @@ public class Weapon : MonoBehaviour
         ammoText.text = ammo + "/" + magAmmo;
         SetAmmo();
     }
+
     void Fire()
     {
 
@@ -142,18 +141,23 @@ public class Weapon : MonoBehaviour
         RaycastHit hit;
 
         PhotonNetwork.LocalPlayer.AddScore(1);
-        
 
-        if(Physics.Raycast(ray.origin, ray.direction, out hit, 100f))
+
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, 100f))
         {
             PhotonNetwork.Instantiate(hitVFX.name, hit.point, Quaternion.identity);
             Debug.Log("Efeito");
 
-            if(hit.transform.gameObject.GetComponent<Health>())
+            if (hit.transform.gameObject.CompareTag("TNT"))
+            {
+                tnt boom = hit.transform.gameObject.GetComponentInParent<tnt>();
+                boom.tntLife--;
+            }
+            if (hit.transform.gameObject.GetComponent<Health>())
             {
                 PhotonNetwork.LocalPlayer.AddScore(damege);
 
-                if(damege >= hit.transform.gameObject.GetComponent<Health>().health)
+                if (damege >= hit.transform.gameObject.GetComponent<Health>().health)
                 {
 
                     RoomManager.instance.kills++;
@@ -165,10 +169,10 @@ public class Weapon : MonoBehaviour
 
                 hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamege", RpcTarget.All, damege);
             }
-            
-                
-                
-            
+
+
+
+
         }
     }
 
@@ -179,7 +183,7 @@ public class Weapon : MonoBehaviour
 
         transform.localPosition = Vector3.SmoothDamp(transform.localPosition, finalPosition, ref recoilVelocity, recoilLength);
 
-        if(transform.localPosition == finalPosition)
+        if (transform.localPosition == finalPosition)
         {
             recoiling = false;
             recovering = true;
@@ -193,7 +197,7 @@ public class Weapon : MonoBehaviour
 
         transform.localPosition = Vector3.SmoothDamp(transform.localPosition, finalPosition, ref recoilVelocity, recoverLength);
 
-        if(transform.localPosition == finalPosition)
+        if (transform.localPosition == finalPosition)
         {
             recoiling = true;
             recovering = false;
