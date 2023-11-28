@@ -4672,6 +4672,19 @@ MonoBehaviour:
   tntLife: 2
   explosionTNT: {fileID: 1192562969}
   gameObjectTNT: {fileID: 753562880}
+--- !u!135 &787540305
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787540302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &798775411
 GameObject:
   m_ObjectHideFlags: 0

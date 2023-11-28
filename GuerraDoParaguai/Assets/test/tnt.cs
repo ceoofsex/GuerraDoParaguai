@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class tnt : MonoBehaviour
+public class Tnt : MonoBehaviour
 {
     public int tntLife = 2;
     public GameObject explosionTNT;
@@ -31,9 +31,9 @@ public class tnt : MonoBehaviour
     IEnumerator EsplosionStart()
     {
         gameObjectTNT.SetActive(false);
-        Debug.Log("Aguardando 1 segundo...");
+        Debug.Log("Aguardando 2 segundo...");
         yield return new WaitForSeconds(2f);
-        Debug.Log("Aguardou 1 segundo!");
+        Debug.Log("Aguardou 2 segundo!");
 
         explosionTNT.SetActive(false);
 
@@ -45,5 +45,12 @@ public class tnt : MonoBehaviour
         yield return new WaitForSeconds(5f);
         gameObjectTNT.SetActive(true);
         tntLife = 2;
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (tntLife == 0)
+        {
+
+        }
     }
 }

@@ -150,7 +150,7 @@ public class Weapon : MonoBehaviour
 
             if (hit.transform.gameObject.CompareTag("TNT"))
             {
-                tnt boom = hit.transform.gameObject.GetComponentInParent<tnt>();
+                Tnt boom = hit.transform.gameObject.GetComponentInParent<Tnt>();
                 boom.tntLife--;
             }
             if (hit.transform.gameObject.GetComponent<Health>())
