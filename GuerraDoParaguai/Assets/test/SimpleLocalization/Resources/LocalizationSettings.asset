@@ -23,6 +23,9 @@ MonoBehaviour:
   - Name: Options
     Id: 1821902855
     TextAsset: {fileID: 4900000, guid: 8e70a3f77f7663d4e97ee0bd395fd9e4, type: 3}
+  - Name: Start
+    Id: 1939351001
+    TextAsset: {fileID: 4900000, guid: 1cd18a2dc0dd3404b80bcf00e59a439f, type: 3}
   - Name: Game
     Id: 993735485
     TextAsset: {fileID: 4900000, guid: 55b2313830187a3429acc445eef049f9, type: 3}
