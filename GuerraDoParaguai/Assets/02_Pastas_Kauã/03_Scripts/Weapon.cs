@@ -150,8 +150,11 @@ public class Weapon : MonoBehaviour
 
             if (hit.transform.gameObject.CompareTag("TNT"))
             {
+                Debug.LogError("colidindo tnt");
                 Tnt boom = hit.transform.gameObject.GetComponentInParent<Tnt>();
-                boom.tntLife--;
+                Debug.LogError(boom);
+                boom.TakeDamage(damege);
+                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, damege);
             }
             if (hit.transform.gameObject.GetComponent<Health>())
             {

@@ -7,5 +7,5 @@ Game.CreateRoom.CreateRoom,CREATE ROOM,CRIAR SALA
 Game.CreateRoom.InputField,PICK A NAME,ESCOLHA UM NOME
 Game.Nickname.Connecting,CONNECTING...,CONECTANDO...
 Game.Nickname.Nickname,PICK A NICKNAME,ESCOLHA SEU NOME
-Game.Nickname.JoinRoom,JOIN ROOM,JUNTARR-SE À SALA
+Game.Nickname.JoinRoom,JOIN ROOM,JUNTAR-SE À SALA
 Game.Nickname.InputField,PICK A NAME,ESCOLHA UM NOME

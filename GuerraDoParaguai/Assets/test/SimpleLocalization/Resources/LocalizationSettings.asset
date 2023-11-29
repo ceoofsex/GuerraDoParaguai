@@ -26,6 +26,9 @@ MonoBehaviour:
   - Name: Game
     Id: 993735485
     TextAsset: {fileID: 4900000, guid: 55b2313830187a3429acc445eef049f9, type: 3}
+  - Name: Controls
+    Id: 584073544
+    TextAsset: {fileID: 4900000, guid: 3f3f41e2c297c53459c23d3fb10b916c, type: 3}
   - Name: cutscene
     Id: 865056656
     TextAsset: {fileID: 4900000, guid: 1befd9f4e63b05145b3e2c8af8ad472e, type: 3}

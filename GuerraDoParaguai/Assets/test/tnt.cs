@@ -1,9 +1,10 @@
+using Photon.Pun;
 using System.Collections;
 using UnityEngine;
 
 public class Tnt : MonoBehaviour
 {
-    public int tntLife = 2;
+    int tntLife = 50;
     public GameObject explosionTNT;
     public GameObject gameObjectTNT;
     // Start is called before the first frame update
@@ -44,13 +45,20 @@ public class Tnt : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         gameObjectTNT.SetActive(true);
-        tntLife = 2;
+        tntLife = 50;
     }
-    private void OnTriggerStay(Collider other)
+    [PunRPC]
+    public void TakeDamage(int _damage)
     {
-        if (tntLife == 0)
-        {
-
-        }
+        Debug.LogError($"tomando dano: {tntLife}");
+        tntLife -= _damage;
+        Debug.LogError($"tomou dano: {tntLife}");
     }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (tntLife == 0)
+    //    {
+
+    //    }
+    //}
 }
