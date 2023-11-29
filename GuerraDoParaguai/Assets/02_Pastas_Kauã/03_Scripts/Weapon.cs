@@ -1,5 +1,6 @@
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -77,7 +78,7 @@ public class Weapon : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    async void Update()
     {
         if (nextFire > 0)
         {
@@ -85,7 +86,7 @@ public class Weapon : MonoBehaviour
         }
 
 
-        if (Input.GetButton("Fire1") && nextFire <= 0 && ammo > 0 && animation.isPlaying == false)
+        if (Input.GetButtonDown("Fire1") && nextFire <= 0 && ammo > 0 && animation.isPlaying == false)
         {
             nextFire = 1 / fireRate;
 
@@ -97,6 +98,7 @@ public class Weapon : MonoBehaviour
             SetAmmo();
 
             Fire();
+            //await Task.Delay(1000);
         }
 
         if (Input.GetKeyDown(KeyCode.R) && mag > 0)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -465,7 +465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &773566695
 Transform:
   m_ObjectHideFlags: 0
@@ -474,8 +474,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773566694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -952.49, y: -537.18, z: 3}
-  m_LocalScale: {x: 4.48, y: 4.48, z: 4.48}
+  m_LocalPosition: {x: -960.5894, y: -537.18, z: 3}
+  m_LocalScale: {x: 6.167168, y: 4.48, z: 4.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1175107040}
@@ -564,6 +564,7 @@ GameObject:
   - component: {fileID: 825891317}
   - component: {fileID: 825891319}
   - component: {fileID: 825891318}
+  - component: {fileID: 825891320}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -688,6 +689,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825891316}
   m_CullTransparentMesh: 1
+--- !u!114 &825891320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825891316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 4
 --- !u!1 &949787986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1062,7 @@ GameObject:
   - component: {fileID: 1049898693}
   - component: {fileID: 1049898695}
   - component: {fileID: 1049898694}
+  - component: {fileID: 1049898696}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1172,6 +1187,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049898692}
   m_CullTransparentMesh: 1
+--- !u!114 &1049898696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049898692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2404a37f3bd75444aa4ad05d0f228347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalizationKey: 3
 --- !u!1 &1067145864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,11 +1603,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -2037,8 +2065,6 @@ PlayableDirector:
     value: {fileID: 1023265114}
   - key: {fileID: 7580139391943270677, guid: 686b8624432bc094087d061518554a4e, type: 2}
     value: {fileID: 1704069295}
-  - key: {fileID: -5639411689578567128, guid: 686b8624432bc094087d061518554a4e, type: 2}
-    value: {fileID: 773566694}
   - key: {fileID: -2428089951661375870, guid: 686b8624432bc094087d061518554a4e, type: 2}
     value: {fileID: 773566696}
   - key: {fileID: -6175173201504805410, guid: 686b8624432bc094087d061518554a4e, type: 2}
