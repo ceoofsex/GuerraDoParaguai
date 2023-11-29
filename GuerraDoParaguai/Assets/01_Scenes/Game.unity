@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25936234, g: 0.32676348, b: 0.4282241, a: 1}
+  m_IndirectSpecularColor: {r: 0.25938153, g: 0.3266421, b: 0.42819723, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1320,8 +1320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 173458079}
-  gameObjectTNT: {fileID: 818989783}
 --- !u!114 &156198912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,6 +1342,50 @@ MonoBehaviour:
   sceneViewId: 55
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &159177109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159177111}
+  - component: {fileID: 159177110}
+  m_Layer: 0
+  m_Name: Loadscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159177110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159177109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e2dc0ed6168564a9dfaeb59d1d165a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &159177111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159177109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 541.8818, y: 772.4461, z: 179.28082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173458079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
@@ -2611,8 +2653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1155656402}
-  gameObjectTNT: {fileID: 384431933}
 --- !u!114 &325738423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,8 +2916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 271549572}
-  gameObjectTNT: {fileID: 149957926}
 --- !u!114 &435378277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4970,8 +5008,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1107077617}
-  gameObjectTNT: {fileID: 126758308}
 --- !u!114 &777592301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5016,8 +5052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1192562969}
-  gameObjectTNT: {fileID: 753562880}
 --- !u!135 &787540305
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6320,8 +6354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 629601603}
-  gameObjectTNT: {fileID: 1645175176}
 --- !u!114 &911611923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6926,8 +6958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 15247724}
-  gameObjectTNT: {fileID: 6225333}
 --- !u!114 &1040770523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6972,8 +7002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 935548347}
-  gameObjectTNT: {fileID: 1056893364}
 --- !u!114 &1047909287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9278,8 +9306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 2040081807}
-  gameObjectTNT: {fileID: 1247798554}
 --- !u!114 &1282882331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9574,8 +9600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1482413784}
-  gameObjectTNT: {fileID: 1625173860}
 --- !u!114 &1334381866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9620,8 +9644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 322211421}
-  gameObjectTNT: {fileID: 582798516}
 --- !u!114 &1338268351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10680,8 +10702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1737269763}
-  gameObjectTNT: {fileID: 409950918}
 --- !u!114 &1487221530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11180,8 +11200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1807771092}
-  gameObjectTNT: {fileID: 1266460864}
 --- !u!114 &1529522294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12215,8 +12233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 992014947}
-  gameObjectTNT: {fileID: 1481679880}
 --- !u!114 &1712989956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15136,8 +15152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f1d0b99c7c0e5438883e0e0525027c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionTNT: {fileID: 1427080219}
-  gameObjectTNT: {fileID: 342204297}
 --- !u!114 &2101195303
 MonoBehaviour:
   m_ObjectHideFlags: 0
