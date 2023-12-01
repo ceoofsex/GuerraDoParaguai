@@ -1,6 +1,5 @@
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
-using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -156,7 +155,7 @@ public class Weapon : MonoBehaviour
                 Tnt boom = hit.transform.gameObject.GetComponentInParent<Tnt>();
                 Debug.LogError(boom);
                 boom.TakeDamage(damege);
-                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, damege);
+                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBufferedViaServer, damege);
             }
             if (hit.transform.gameObject.GetComponent<Health>())
             {
@@ -172,7 +171,7 @@ public class Weapon : MonoBehaviour
 
                 }
 
-                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamege", RpcTarget.All, damege);
+                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamege", RpcTarget.AllBufferedViaServer, damege);
             }
 
 

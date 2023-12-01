@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Photon.Pun;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
 
 public class WeaponSwitcher : MonoBehaviour
@@ -12,10 +9,10 @@ public class WeaponSwitcher : MonoBehaviour
     public Animation _animation;
     public AnimationClip draw;
     private int selectedWeapon = 0;
-    
 
 
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,48 +24,48 @@ public class WeaponSwitcher : MonoBehaviour
     {
         int previousSeletedWeapon = selectedWeapon;
 
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             selectedWeapon = 0;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             selectedWeapon = 1;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             selectedWeapon = 2;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             selectedWeapon = 3;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             selectedWeapon = 4;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             selectedWeapon = 5;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha7))
+        if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             selectedWeapon = 6;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha8))
+        if (Input.GetKeyDown(KeyCode.Alpha8))
         {
             selectedWeapon = 7;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha9))
+        if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             selectedWeapon = 8;
         }
-        
 
-        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
 
-            if(selectedWeapon >= transform.childCount -1)
+            if (selectedWeapon >= transform.childCount - 1)
             {
                 selectedWeapon = 0;
             }
@@ -79,12 +76,12 @@ public class WeaponSwitcher : MonoBehaviour
 
         }
 
-        if(Input.GetAxis("Mouse ScrollWheel") < 0)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
 
-            if(selectedWeapon <= 0)
+            if (selectedWeapon <= 0)
             {
-                selectedWeapon = transform.childCount -1;
+                selectedWeapon = transform.childCount - 1;
             }
             else
             {
@@ -92,16 +89,16 @@ public class WeaponSwitcher : MonoBehaviour
             }
 
         }
-        if(Input.GetButton("Cancel"))
+        if (Input.GetButton("Cancel"))
         {
             Application.Quit();
             Debug.Log("QUIT");
         }
-       
-        
-        
 
-        if(previousSeletedWeapon != selectedWeapon)
+
+
+
+        if (previousSeletedWeapon != selectedWeapon)
         {
             SelectedWeapon();
         }
@@ -112,11 +109,11 @@ public class WeaponSwitcher : MonoBehaviour
     [PunRPC]
     void SelectedWeapon()
     {
-    
-        playerSetupView.RPC("SetTPWeapon", RpcTarget.All, selectedWeapon);
-        if(selectedWeapon >= transform.childCount)
+
+        playerSetupView.RPC("SetTPWeapon", RpcTarget.AllBufferedViaServer, selectedWeapon);
+        if (selectedWeapon >= transform.childCount)
         {
-            selectedWeapon = transform.childCount -1;
+            selectedWeapon = transform.childCount - 1;
         }
 
         _animation.Stop();
@@ -124,9 +121,9 @@ public class WeaponSwitcher : MonoBehaviour
 
         int i = 0;
 
-        foreach(Transform _weapon in transform)
+        foreach (Transform _weapon in transform)
         {
-            if(i == selectedWeapon)
+            if (i == selectedWeapon)
             {
                 _weapon.gameObject.SetActive(true);
 
